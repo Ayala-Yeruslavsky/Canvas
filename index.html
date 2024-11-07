@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+
+</head>
+
+
+<body>
+    
+    <div class="button-container">
+        <button onclick="changeColor('red')" id="red"></button>
+        <button onclick="changeColor('orange')" id="orange"></button>
+        <button onclick="changeColor('yellow')" id="yellow"></button>
+        <button onclick="changeColor('green')" id="green"></button>
+        <button onclick="changeColor('blue')" id="blue"></button>
+        <button onclick="changeColor('brown')" id="brown"></button>
+        <button onclick="changeColor('black')" id="black"></button>
+        <button onclick="changeLineThickness(1)" id="lineThick1">1</button>
+        <button onclick="changeLineThickness(2)" id="lineThick2">2</button>
+        <button onclick="changeLineThickness(3)" id="lineThick3">3</button>
+        <button onclick="changeLineThickness(4)" id="lineThick4">4</button>
+        <button onclick="changeLineThickness(5)" id="lineThick5">5</button>
+        <button onclick="changeRandomColor()" id="randomColor">Random color</button>
+        <button onclick="clearCanvas()" id="clearCanvas">Clear Canvas</button>
+        <button onclick="generateRandomLetter()">Generate Random Letter</button>
+    </div>
+
+    <div id="letterDisplay">
+        <span id="randomLetter"></span>
+    </div>
+
+    <canvas id="myCanvas" width="600" height="400"
+        onmousemove="paint(event)"
+        onmousedown="mark()"
+        onmouseenter="mark()"></canvas>
+
+
+
+
+    
+</body>
+</html>
